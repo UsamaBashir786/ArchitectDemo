@@ -60,70 +60,37 @@
     <script src="./scripts/dataManager.js"></script>
     <script src="./scripts/uiManager.js"></script>
     <script src="./scripts/chartManager.js"></script>
-    <!-- Remove modalManager.js since we're handling modals in uiManager -->
+    <script src="./scripts/modalManager.js"></script>
     <script src="./scripts/app.js"></script>
     
     <script>
-        // Initialize Lucide icons
         lucide.createIcons();
         
-        // Global function to toggle mobile menu
-        function toggleMobileMenu() {
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
             const sidebar = document.querySelector('.sidebar');
-            if (sidebar) {
-                if (window.innerWidth < 768) {
+            
+            if (mobileMenuBtn && sidebar) {
+                mobileMenuBtn.addEventListener('click', function() {
                     sidebar.classList.toggle('hidden');
                     sidebar.classList.toggle('block');
                     sidebar.classList.toggle('fixed');
                     sidebar.classList.toggle('z-50');
                     sidebar.classList.toggle('inset-0');
-                    sidebar.classList.toggle('bg-white');
-                    sidebar.classList.toggle('shadow-xl');
-                }
+                });
             }
-        }
-        
-        // Close mobile menu when clicking outside on mobile
-        document.addEventListener('click', function(event) {
-            if (window.innerWidth < 768) {
-                const sidebar = document.querySelector('.sidebar');
-                const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-                
-                if (sidebar && 
+            
+            document.addEventListener('click', function(event) {
+                if (window.innerWidth < 768 && 
+                    sidebar && 
                     !sidebar.classList.contains('hidden') && 
                     !sidebar.contains(event.target) && 
                     event.target !== mobileMenuBtn && 
-                    !mobileMenuBtn?.contains(event.target)) {
+                    !mobileMenuBtn.contains(event.target)) {
                     sidebar.classList.add('hidden');
                     sidebar.classList.remove('block');
                 }
-            }
-        });
-        
-        // Handle window resize
-        window.addEventListener('resize', function() {
-            const sidebar = document.querySelector('.sidebar');
-            if (sidebar && window.innerWidth >= 768) {
-                // On desktop, ensure sidebar is visible
-                sidebar.classList.remove('hidden', 'fixed', 'inset-0', 'z-50', 'bg-white', 'shadow-xl');
-                sidebar.classList.add('block');
-            } else if (sidebar && window.innerWidth < 768) {
-                // On mobile, hide sidebar by default
-                sidebar.classList.add('hidden');
-                sidebar.classList.remove('block');
-                sidebar.classList.add('fixed', 'inset-0', 'z-50', 'bg-white', 'shadow-xl');
-            }
-        });
-        
-        // Initialize when DOM is ready
-        document.addEventListener('DOMContentLoaded', function() {
-            // Apply initial mobile/desktop state
-            window.dispatchEvent(new Event('resize'));
-            
-            // Initialize the app
-            if (typeof initApp === 'function') {
-                initApp();
-            }
+            });
         });
     </script>
 </body>
