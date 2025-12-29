@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "New Inquiry",
+        "message": "New inquiry from GreenTech Solutions about commercial building design.",
+        "time": "2 hours ago",
+        "type": "lead",
+        "read": false
+    },
+    {
+        "id": 2,
+        "title": "Project Update",
+        "message": "Corporate Office Redesign is 75% complete and on track for June deadline.",
+        "time": "1 day ago",
+        "type": "project",
+        "read": false
+    },
+    {
+        "id": 3,
+        "title": "Feedback Received",
+        "message": "Acme Corporation submitted 5-star feedback for Retail Mall Renovation project.",
+        "time": "2 days ago",
+        "type": "feedback",
+        "read": true
+    },
+    {
+        "id": 4,
+        "title": "Payment Received",
+        "message": "Payment of $25,000 received from BuildRight Constructions for Hospital Extension Wing project.",
+        "time": "3 days ago",
+        "type": "financial",
+        "read": true
+    }
+]

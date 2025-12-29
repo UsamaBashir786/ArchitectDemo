@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "clientId": 1,
+        "clientName": "Acme Corporation",
+        "projectId": 4,
+        "projectName": "Retail Mall Renovation",
+        "rating": 5,
+        "comments": "Excellent work! The renovation was completed ahead of schedule and the quality exceeded our expectations.",
+        "date": "2024-04-12"
+    },
+    {
+        "id": 2,
+        "clientId": 2,
+        "clientName": "Tech Innovate Inc.",
+        "projectId": 3,
+        "projectName": "Tech Campus Phase 1",
+        "rating": 3,
+        "comments": "Good design work but there have been delays in the project timeline. Communication could be improved.",
+        "date": "2024-03-28"
+    },
+    {
+        "id": 3,
+        "clientId": 4,
+        "clientName": "BuildRight Constructions",
+        "projectId": 5,
+        "projectName": "Hospital Extension Wing",
+        "rating": 4,
+        "comments": "Professional team with innovative design solutions. Looking forward to continuing our partnership.",
+        "date": "2024-04-05"
+    }
+]

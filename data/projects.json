@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Corporate Office Redesign",
+        "clientId": 1,
+        "clientName": "Acme Corporation",
+        "dueDate": "2024-06-15",
+        "status": "in-progress",
+        "progress": 75,
+        "description": "Complete redesign of corporate headquarters with modern open concept.",
+        "budget": 150000,
+        "startDate": "2024-01-20"
+    },
+    {
+        "id": 2,
+        "name": "Residential Complex Planning",
+        "clientId": 4,
+        "clientName": "BuildRight Constructions",
+        "dueDate": "2024-08-30",
+        "status": "planning",
+        "progress": 20,
+        "description": "Master planning for a new residential complex with 200 units.",
+        "budget": 250000,
+        "startDate": "2024-02-15"
+    },
+    {
+        "id": 3,
+        "name": "Tech Campus Phase 1",
+        "clientId": 2,
+        "clientName": "Tech Innovate Inc.",
+        "dueDate": "2024-05-20",
+        "status": "delayed",
+        "progress": 60,
+        "description": "First phase of new technology campus construction.",
+        "budget": 300000,
+        "startDate": "2023-11-10"
+    },
+    {
+        "id": 4,
+        "name": "Retail Mall Renovation",
+        "clientId": 1,
+        "clientName": "Acme Corporation",
+        "dueDate": "2024-04-10",
+        "status": "completed",
+        "progress": 100,
+        "description": "Full renovation of downtown retail mall.",
+        "budget": 180000,
+        "startDate": "2023-09-05"
+    },
+    {
+        "id": 5,
+        "name": "Hospital Extension Wing",
+        "clientId": 4,
+        "clientName": "BuildRight Constructions",
+        "dueDate": "2024-09-15",
+        "status": "in-progress",
+        "progress": 40,
+        "description": "Design and planning for new hospital extension wing.",
+        "budget": 220000,
+        "startDate": "2024-01-10"
+    },
+    {
+        "id": 6,
+        "name": "Boutique Hotel Design",
+        "clientId": 3,
+        "clientName": "Global Design Co.",
+        "dueDate": "2024-07-01",
+        "status": "in-progress",
+        "progress": 50,
+        "description": "Luxury boutique hotel design in urban center.",
+        "budget": 120000,
+        "startDate": "2023-12-01"
+    }
+]
